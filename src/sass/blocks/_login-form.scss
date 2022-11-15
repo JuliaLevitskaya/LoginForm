@@ -1,0 +1,121 @@
+.login__form {
+    min-height: 630px;
+    background: url('../img/image_bgimg.svg') no-repeat;
+    padding: 39px 36px 0 38px;
+    &-item {
+        display: flex;
+        justify-content: space-between;
+    }
+    .login__form_register {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background: linear-gradient(109.46deg, rgba(201, 201, 201, 0.8) 1.57%, rgba(196, 196, 196, 0.1) 100%);
+            backdrop-filter: blur(30px);
+            box-sizing: border-box;
+            border-radius: 27px;
+            top: 0;
+            z-index: -2;
+            left: 0;
+            height: 500px;
+            width: 479px;
+            opacity: 0.5;
+            border: 1px white solid;
+        }
+        margin-top: 47px;
+        padding: 19px 26px;
+        z-index: 3;
+        .login__form_register-title {
+            font-family: 'Iceland';
+            font-size: 40px;
+            color: #FFFFFF;
+            padding-left: 2px;
+        }
+        .login__form_register-separator {
+            width: 110px;
+            border: 1px solid #FFFFFF;
+            margin: 8px 0 0 2px;
+        }
+        .login__form_register-subtitle {
+            font-family: 'Montserrat';
+            font-size: 20px;
+            font-weight: 300;
+            color: #FFFFFF;
+            margin-top: 10px;
+            padding-left: 2px;
+        }
+        .login__form_register-item {
+            margin-top: 50px;
+        }
+        .login__form_password {
+            margin-top: 30px;
+        }
+        .login__form_register-input {
+            cursor: pointer;
+            margin-top: 5px;
+            input {
+                background: linear-gradient(109.46deg, rgba(201, 201, 201, 0.8) 1.57%, rgba(196, 196, 196, 0.1) 100%);
+                opacity: 0.7;
+                backdrop-filter: blur(30px);
+                border-radius: 7px;
+                border: none;
+                padding: 13px 0 16px 13px;
+                width: 420px;
+                outline: none;
+                font-family: 'Montserrat';
+                font-size: 15px;
+                color: #FFFFFF;
+                border: 1px white solid;
+            }
+        }
+        .login__form_register-text {
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 15px;
+            color: #FFFFFF;
+            margin-bottom: 5px;
+            padding-left: 2px;
+        }
+        .login__form_register-text--tac {
+            text-align: center;
+            margin-top: 13px;
+            font-family: 'Montserrat';
+            font-weight: 300;
+            font-size: 14px;
+            color: #fff;
+            padding: 1px 10px 0 0;
+            letter-spacing: 0.3px;
+            span {
+                font-family: 'Montserrat';
+                font-weight: 600;
+                font-size: 16px;
+                color: #FFFFFF;
+            }
+        }
+        .login__form_help {
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 12px;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .login__form_button {
+            cursor: pointer;
+            margin-top: 29px;
+            padding: 16px 185px;
+            background: #A5D9D0;
+            border-radius: 7px;
+            border: none;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            color: #000000;
+        }
+    }
+}
