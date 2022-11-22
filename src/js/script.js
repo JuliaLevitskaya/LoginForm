@@ -1,11 +1,29 @@
-const hamburger = document.querySelector('.hamburger'),
-    menu = document.querySelector('.menu'),
-    closeElem = document.querySelector('.menu__close');
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('pass');
+const button = document.getElementById('button');
+button.addEventListener('click', (event) => {
+    event.preventDefault();
 
-hamburger.addEventListener('click', () => {
-    menu.classList.add('active');
+    const login = emailInput.value;
+    const password = passwordInput.value;
+
+    validateLogin(login);
 });
 
-closeElem.addEventListener('click', () => {
-    menu.classList.remove('active');
-});
+// function validateLogin(login) {
+//     if (login == "") {
+//         alert("Login must be filled out");
+//         return false;
+//     } else if (login.length != 6) {
+
+//     } else if (login.length <= 20) {
+
+//     }
+//     return true;
+
+// }
+
+// create some validations:
+// - field should not be empty ✅ 
+// - min length = 6
+// - max length = 20
