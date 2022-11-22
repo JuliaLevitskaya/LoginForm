@@ -10,18 +10,19 @@ button.addEventListener('click', (event) => {
     validateLogin(login);
 });
 
-// function validateLogin(login) {
-//     if (login == "") {
-//         alert("Login must be filled out");
-//         return false;
-//     } else if (login.length != 6) {
-
-//     } else if (login.length <= 20) {
-
-//     }
-//     return true;
-
-// }
+function validateLogin(login) {
+    if (login == "") {
+        alert("Login must be filled out");
+        return false;
+    } else if (login.length < 6) {
+        alert("Login must 6 or more");
+        return false;
+    } else if (login.length > 20) {
+        alert("Login must 20 or less");
+        return false;
+    }
+    return true;
+}
 
 // create some validations:
 // - field should not be empty ✅ 
